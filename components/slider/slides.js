@@ -1,4 +1,4 @@
-export default slides = [
+export default [
 	{
 		title: 'Colors',
 		desc: 'Choose from three bold finishes. iPhone 17 Pro shown in Cosmic Orange.',

@@ -5,3 +5,42 @@
 
 	border-radius: 28px;
 }
+
+.slide-list {
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-width: fit-content;
+    gap: 12px;
+    overflow: visible;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+
+    justify-content: center;
+    padding: 0 32px;
+	height: 56px;
+    width: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    padding-inline-start: 14px;
+    padding-inline-end: 32px;
+
+	border-radius: 80px;
+
+	color: rgb(245, 245, 247);
+	background-color: rgb(30, 30, 32);
+
+	font-size: 17px;
+    line-height: 1.2353641176;
+    font-weight: 600;
+    letter-spacing: -0.022em;
+
+	transition: all 0.35s ease-in;
+}
+
+.button:hover {
+	background-color: rgb(48, 48, 51);
+}

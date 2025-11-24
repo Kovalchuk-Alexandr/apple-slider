@@ -1,9 +1,32 @@
+import slides from './slides';
 import './style.css';
 
+const SlideItem = ({ data }) => {
+	return (
+		<li className="slide-list__item">
+			<button className="button">{data.title}</button>
+		</li>
+	);
+};
+
 const Slider = () => {
+	// console.log(slides);
 	return (
 		<div className="slider">
-			<h1>Slider</h1>
+			<div className="controls">
+				<ul className="slide-list">
+					{slides.map((slide, index) => (
+						<SlideItem key={index} data={slide} />
+					))}
+
+					{/* <li className="slide-list__item">
+						<button className="button">Colors</button>
+					</li>
+					<li className="slide-list__item">
+						<button className="button">Aluminum unibody</button>
+					</li> */}
+				</ul>
+			</div>
 		</div>
 	);
 };
