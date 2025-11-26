@@ -1,10 +1,14 @@
+import IconPlus from './icons/IconPlus.jsx';
 import slides from './slides';
 import './style.css';
 
 const SlideItem = ({ data }) => {
 	return (
 		<li className="slide-list__item">
-			<button className="button">{data.title}</button>
+			<button className="button">
+				<IconPlus />
+				{data.title}
+			</button>
 		</li>
 	);
 };
