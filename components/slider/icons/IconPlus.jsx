@@ -1,7 +1,7 @@
 const IconPlus = () => {
 	return (
 		<svg
-			class="plus-icon"
+			className="plus-icon"
 			version="1.1"
 			width="24px"
 			height="24px"

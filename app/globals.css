@@ -19,7 +19,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  background: linear-gradient(0deg, rgba(29,29,31, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(0deg, rgba(29,29,31, 1) 0%, rgba(10, 10, 10, 1) 100%);
   font-family: var(--font-noto-sans), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
