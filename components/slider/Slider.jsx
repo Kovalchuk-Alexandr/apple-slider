@@ -1,10 +1,10 @@
 'use client';
 
-import Image from 'next/image.js';
 import { useState } from 'react';
 import ChevronDown from './icons/ChevronDown.jsx';
 import ChevronUp from './icons/ChevronUp.jsx';
 import IconPlus from './icons/IconPlus.jsx';
+import SliderContent from './SliderContent.jsx';
 import slidesData from './slides';
 import './style.css';
 
@@ -38,8 +38,8 @@ const Slider = () => {
 	const [activeSlide, setActiveSlide] = useState(null);
 
 	const clickHandler = (id, index) => {
-		console.log('Click! on ID:', id);
-		console.log('Index: ', index);
+		// console.log('Click! on ID:', id);
+		// console.log('Index: ', index);
 
 		setActiveSlide(index);
 
@@ -85,7 +85,7 @@ const Slider = () => {
 		setActiveSlide((prev) => ++prev);
 	};
 
-	console.log('Active slide: ', activeSlide);
+	// console.log('Active slide: ', activeSlide);
 
 	return (
 		<div className="slider">
@@ -130,12 +130,12 @@ const Slider = () => {
 			</div>
 
 			<div className="content">
-				<div className="slide-content">
-					<Image src="/img/slides/orange.jpg" alt="image" fill />
-				</div>
+				{activeSlide !== null && (
+					<SliderContent slides={slides} activeSlide={activeSlide} />
+				)}
 			</div>
 		</div>
 	);
-};
+};;;
 
 export default Slider;
