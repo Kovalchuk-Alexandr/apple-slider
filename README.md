@@ -1,3 +1,64 @@
+# Apple-slider
+
+кастомный слайдер (без Swiper)
+Копия слайдера [https://www.apple.com/iphone-17-pro/](https://www.apple.com/iphone-17-pro/).
+
+***Deployment on Vercel***: https://apple-slider-1jw4k1ofg-kovalchuk-alexandrs-projects.vercel.app/
+
+[See Demo](https://apple-slider-1jw4k1ofg-kovalchuk-alexandrs-projects.vercel.app/)
+
+## Технологии
+
+- **Next.js 14** - React фреймворк
+- **Framer Motion** - Анимации (FadeIn, AnimatePresence)
+- **Exit-анимация** - уезжание слайда влево
+- Видео в слайдах
+
+## Установка и запуск
+
+### 1. Установка приложения на Next.js
+
+1. Create a new Next.js app named my-app
+2. cd my-app and start the dev server.
+3. [Visit http://localhost:3000](http://localhost:3000).
+
+```bash
+npx create-next-app@latest apple-slider --yes
+npx create-next-app@latest my-app --yes
+cd my-app
+npm run dev
+```
+
+`--yes` skips prompts using saved preferences or defaults. The default setup enables TypeScript, Tailwind, App Router, and Turbopack, with import alias @/*.
+
+### 2. Установка зависимостей
+
+```bash
+npm install
+```
+
+### 3. Запуск приложения
+
+```bash
+npm run dev
+```
+
+### 4. Установка framer-motion
+
+```bash
+npm i framer-motion
+```
+
+### 5. Сборка для продакшена
+
+```bash
+npm run build
+npm start
+```
+
+Приложение будет доступно по адресу: `http://localhost:3000`
+ _______________________________
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
